@@ -50,21 +50,21 @@ python appUI.py
   - Request Body: {"username": "user", "password": "pass"}
   - Response: {"user_id": 1, "message": "Login successful."}
 - #### Add Task: POST /tasks
-Request Body: {"description": "Task", "priority": "high", "due_date": "MM/DD/YYYY", "user_id": 1}
-Response: {"message": "Task successfully added. Task ID is '1'"}
+  - Request Body: {"description": "Task", "priority": "high", "due_date": "MM/DD/YYYY", "user_id": 1}
+  - Response: {"message": "Task successfully added. Task ID is '1'"}
 - #### List Tasks: GET /tasks
-Request Parameters: user_id
-Response: List of user-specific tasks
+  - Request Parameters: user_id
+  - Response: List of user-specific tasks
 - #### Get Task: GET /tasks/<int:task_id>
-Request Parameters: user_id
-Response: Task details
+  - Request Parameters: user_id
+  - Response: Task details
 - #### Update Task: PUT /tasks/<int:task_id>
-Request Parameters: user_id
-Request Body: {"description": "Updated Task", "priority": "medium", "due_date": "MM/DD/YYYY"}
-Response: {"message": "Task with ID '1' updated successfully."}
+  - Request Parameters: user_id
+  - Request Body: {"description": "Updated Task", "priority": "medium", "due_date": "MM/DD/YYYY"}
+  - Response: {"message": "Task with ID '1' updated successfully."}
 - #### Delete Task: DELETE /tasks/<int:task_id>
-Request Parameters: user_id
-Response: {"message": "Task 1 deleted successfully."}
+  - Request Parameters: user_id
+  - Response: {"message": "Task 1 deleted successfully."}
 
 ### Sample User Interface Commands
 1. Register: Register a new user.
